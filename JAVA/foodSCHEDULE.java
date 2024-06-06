@@ -10,19 +10,17 @@ public class foodSCHEDULE{
 
         System.out.println("Hey Adwoa, it is time for food. Would you like to take Breakfast, Lunch or Supper? ");
         String food = input.next().toLowerCase();
+        Random random = new Random();
 
         if(food.equals ("breakfast")){
-            Random random = new Random();
             int randomIndex = random.nextInt(breakfast.length);
             String randomString = breakfast[randomIndex];
             System.out.println("This morning; for breakfast, you would take " + randomString + ".");
         } else if (food.equals ("lunch"))  {
-            Random random = new Random();
             int randomIndex = random.nextInt(lunch.length);
             String randomString = lunch[randomIndex];
             System.out.println("This afternoon; for lunch, you would take " + randomString + ".");
         }else{
-            Random random = new Random();
             int randomIndex = random.nextInt(supper.length);
             String randomString = supper[randomIndex];
             System.out.println("This evening; for supper, you would take " + randomString + ".");
