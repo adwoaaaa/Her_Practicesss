@@ -1,5 +1,3 @@
-package JAVA;
-
 public class useThree
 {
 public static void main(String[] args)
